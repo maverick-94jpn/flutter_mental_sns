@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+
 import 'package:new_mentalhealthapp/styles.dart';
+import 'bnb_screen.dart';
 
 class IntroScreen extends StatelessWidget {
   @override
@@ -30,6 +32,19 @@ class IntroScreen extends StatelessWidget {
             title: "Title of first page",
             body:
                 "Here you can write the description of the page, to explain someting...",
+            footer: RaisedButton(
+              child: Text('はじめる'),
+              onPressed: () {
+                print('tap');
+                Navigator.of(context).push<dynamic>(
+                  MaterialPageRoute<dynamic>(
+                    builder: (BuildContext context) {
+                      return BottomNavigationBarScreen();
+                    },
+                  ),
+                );
+              },
+            ),
             image: Center(
               child:
                   Image.network("https://domaine.com/image.png", height: 175.0),

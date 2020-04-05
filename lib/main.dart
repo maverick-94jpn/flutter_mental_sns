@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+
 import 'package:new_mentalhealthapp/styles.dart';
-import 'package:new_mentalhealthapp/uis/intro_screen.dart';
+import 'package:new_mentalhealthapp/ui/intro_screen.dart';
 
 void main() {
   runApp(MyApp());
