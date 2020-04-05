@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:new_mentalhealthapp/styles.dart';
 import 'package:new_mentalhealthapp/uis/intro_screen.dart';
 
@@ -12,7 +13,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(primaryColor: Styles.mainBlue),
+      theme: ThemeData(
+        textTheme: GoogleFonts.notoSansTextTheme(),
+        primaryColor: Styles.mainBlue,
+      ),
       home: IntroScreen(),
     );
   }
